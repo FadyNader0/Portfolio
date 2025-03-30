@@ -39,6 +39,16 @@ body {
 @media (max-width: 768px) {
     .hero-text { font-size: 4rem; }
 
+
+}
+@media (max-width: 991px) {
+    .navbar{
+        position: static !important;
+    }
+    .hero-section{
+        margin-top: 0;
+    }
+
 }
 @media (max-width: 480px) {
     .hero-text { font-size: 2.5rem; }
