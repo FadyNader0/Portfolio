@@ -17,13 +17,16 @@ body {
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
                 url('./images/received_460932538771105_LE_upscale_balanced_x4.jpg') top/cover;
+    background-attachment: fixed;
     position: relative;
+    will-change: transform;
 }
 
 
 
+
 .hero-text {
-    font-size: 7rem;
+    font-size: 6rem;
 
     font-weight: 700;
     background: linear-gradient(45deg, var(--accent), #00ffff);
@@ -31,26 +34,34 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-@media(max-width: 779px){
-    .hero-text{
-        font-size: 5rem;
-    }
+@media (max-width: 1024px) {
+    .hero-text { font-size: 6rem; }
 }
-@media(max-width: 407px){
-    .hero-text{
-        font-size: 3rem;
-    }
+@media (max-width: 768px) {
+    .hero-text { font-size: 4rem; }
 }
+@media (max-width: 480px) {
+    .hero-text { font-size: 2.5rem; }
+}
+
 
 
 .navbar {
     background: rgba(10, 10, 10, 0.95) !important;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.navbar .navbar-nav .nav-item a{
 
-    transition: 0.5s;
+.navbar .navbar-brand{
+    font-size: 1.5rem;
+
 }
+
+
+.navbar .navbar-nav .nav-item a {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+}
+
 
 .navbar .navbar-nav .nav-item a.active,
 .navbar .navbar-nav .nav-item:hover a{
@@ -133,13 +144,20 @@ body {
     color: var(--dark-bg);
     font-weight: 600;
     transition: all 0.3s ease;
+    min-width: 150px;
+    text-align: center;
 }
 
 .btn-custom:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
 }
-
+@media (max-width: 500px) {
+    .btn-custom {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
 .stats-card {
     background: var(--card-bg);
     border-radius: 15px;
