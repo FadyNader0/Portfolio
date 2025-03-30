@@ -1,25 +1,23 @@
 
+
 :root {
     --dark-bg: #0a0a0a;
     --card-bg: #1a1a1a;
     --accent: #00ff88;
     --text-primary: #ffffff;
-    --text-secondary: #888888;
 }
 
 body {
     background-color: var(--dark-bg);
     color: var(--text-primary);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', Arial, sans-serif;
 }
 
 .hero-section {
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-                url('./images/received_460932538771105_LE_upscale_balanced_x4.jpg') top/cover;
-    background-attachment: fixed;
-    position: relative;
-    will-change: transform;
+                url('./images/back_ground.webp') top/cover;
+    margin-top: 20px;
 }
 
 
@@ -27,22 +25,26 @@ body {
 
 .hero-text {
     font-size: 6rem;
-
     font-weight: 700;
     background: linear-gradient(45deg, var(--accent), #00ffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+
+
 @media (max-width: 1024px) {
     .hero-text { font-size: 6rem; }
 }
 @media (max-width: 768px) {
     .hero-text { font-size: 4rem; }
+
 }
 @media (max-width: 480px) {
     .hero-text { font-size: 2.5rem; }
 }
+
+
 
 
 
