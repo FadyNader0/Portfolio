@@ -160,7 +160,7 @@ function initializeParticleSystem() {
         { color: 'var(--accent-tertiary)', size: '1px' }
     ];
     
-    for (let i = 0; i < 80; i++) {
+    for (let i = 0; i < 200; i++) {
         const particle = document.createElement('div');
         const type = particleTypes[Math.floor(Math.random() * particleTypes.length)];
         
