@@ -318,6 +318,28 @@ a{
     transform: translateY(-5px) scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 255, 136, 0.3);
 }
+.btn-wrap{
+  margin-top:18px;
+  text-align: center;
+  display: none;
+}
+.project-btn{
+  display:inline-block;
+  padding:10px 18px;
+  background:var(--gradient-primary);
+  color:black;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:600;
+  transition:all 0.5s  ease;
+  box-shadow:0 8px 22px rgba(37,169,255,0.18);
+}
+.project-btn:hover{ 
+    transform:translateY(-3px); 
+    box-shadow: var(--shadow-hover);
+    color: var(--primary-bg) 
+}
+
 
 /* Service Cards */
 .service-card {
@@ -716,6 +738,10 @@ footer a:hover {
     
     .project-card .p-4 {
         padding: 1rem !important;
+    }
+    .btn-wrap{
+        display: block;
+
     }
 }
 
