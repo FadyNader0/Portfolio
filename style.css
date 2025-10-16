@@ -345,6 +345,12 @@ a{
     color: var(--primary-bg) 
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--accent-primary);
+    transition: var(--transition-fast);
+}
+
 
 /* Service Cards */
 .service-card {
