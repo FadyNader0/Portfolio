@@ -72,6 +72,11 @@ a{
     max-width: 95% !important;
   }
 }
+@media (max-width: 575.98px) {
+  .head-section{
+    font-size: 35px !important;
+  }
+}
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
