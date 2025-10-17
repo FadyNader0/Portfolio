@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize all modern features
     initializeModernAnimations();
     initializeEnhancedFormHandling();
-    initializeTypingAnimation();
     initializeCounterSystem();
     initializeParticleSystem();
     initializeLoadingScreen();
@@ -82,30 +81,6 @@ function addModernAnimationClasses() {
 }
 
 
-// Enhanced Typing Animation
-function initializeTypingAnimation() {
-    const heroText = document.querySelector('.hero-text');
-    if (!heroText) return;
-
-    const text = heroText.textContent;
-    heroText.textContent = '';
-    heroText.style.borderRight = '3px solid var(--accent-primary)';
-    heroText.style.animation = 'blink 1s infinite';
-    
-    let i = 0;
-    const typeWriter = () => {
-        if (i < text.length) {
-            heroText.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 80);
-        } else {
-            heroText.style.borderRight = 'none';
-            heroText.style.animation = 'textGlow 3s ease-in-out infinite alternate';
-        }
-    };
-    
-    setTimeout(typeWriter, 1000);
-}
 
 // Advanced Counter System
 function initializeCounterSystem() {
