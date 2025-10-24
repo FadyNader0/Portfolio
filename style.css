@@ -683,6 +683,29 @@ a{
     color: var(--text-muted);
     opacity: 0.8;
 }
+.inpuEmail{
+    position: relative;
+}
+.inpuEmail:focus-within  .validEmail{
+    top: -80%;
+}
+.validEmail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50% , -50%);
+    width: max-content;
+    font-size: 18px;
+    background:var(--gradient-primary);
+    color:black;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    padding: 5px 10px;
+    transition: all 0.5s ease;
+    
+}
 
 /* Footer */
 footer {
@@ -874,14 +897,3 @@ footer a:hover {
 #contact h3.active {
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
